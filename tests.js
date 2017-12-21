@@ -159,6 +159,37 @@ tape('addBuildingIdsToObjects', function (t) {
     },
     'adds id key to each building object'
   );
+  t.deepEqual(
+    buildings,
+    {
+      14358: {
+        address: '1010 Yorkshire Circle, Rocky Mount, North Carolina, 75141',
+        rooms: 3,
+        value: 450000
+      },
+      98343: {
+        address: '2367 Parkway Street, Palm Springs, California, 92262',
+        rooms: 2,
+        value: 375000
+      },
+      51942: {
+        address: '4079 Dola Mine Road, Raleigh, North Carolina, 27601',
+        rooms: 3,
+        value: 413000
+      },
+      73826: {
+        address: '3979 Sunrise Road, SCHELL CITY, Missouri, 64783',
+        rooms: 4,
+        value: 490000
+      },
+      73826: {
+        address: '738 Paradise Lane, Claremont, California, 91711',
+        rooms: 7,
+        value: 1200000
+      }
+    },
+    'Original object has not been mutated'
+  );
   t.end();
 });
 
@@ -219,6 +250,37 @@ tape('parseBuildingAddresses', function (t) {
       },
     },
     'Should parse address field into object'
+  );
+  t.deepEqual(
+    buildings,
+    {
+      14358: {
+        address: '1010 Yorkshire Circle, Rocky Mount, North Carolina, 75141',
+        rooms: 3,
+        value: 450000
+      },
+      98343: {
+        address: '2367 Parkway Street, Palm Springs, California, 92262',
+        rooms: 2,
+        value: 375000
+      },
+      51942: {
+        address: '4079 Dola Mine Road, Raleigh, North Carolina, 27601',
+        rooms: 3,
+        value: 413000
+      },
+      73826: {
+        address: '3979 Sunrise Road, SCHELL CITY, Missouri, 64783',
+        rooms: 4,
+        value: 490000
+      },
+      73826: {
+        address: '738 Paradise Lane, Claremont, California, 91711',
+        rooms: 7,
+        value: 1200000
+      }
+    },
+    'Original object has not been mutated'
   );
   t.end();
 });

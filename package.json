@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "tape tests.js"
+    "test": "tape tests.js | tap-spec"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "tap-spec": "^5.0.0",
     "tape": "^4.7.0"
   }
 }

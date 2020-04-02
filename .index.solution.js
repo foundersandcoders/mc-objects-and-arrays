@@ -60,6 +60,9 @@
 // This is just an example, but you can use it to decide how you will complete
 // the functions below.
 
+// ==========
+// QUESTION 1
+// ==========
 // This function should take the buildings object (`bldngs`) and return an array
 // of objects that each describe a building. Using the `buildings` object above
 // as an example input, this function would return:
@@ -82,6 +85,9 @@ function getListOfBuildingObjects(bldngs) {
   });
 }
 
+// ==========
+// QUESTION 2
+// ==========
 // This function should take the buildings object (`bldngs`) and return an array
 // of strings where each string is the building address. Using the `buildings`
 // object above as an example input, this function would return:
@@ -96,6 +102,9 @@ function getListOfBuildingAddresses(bldngs) {
   });
 }
 
+// ==========
+// QUESTION 3
+// ==========
 // This function should take the buildings object (`bldngs`) and a number
 // (`minValue`), and should return an object that contains only those buildings
 // that have a value at least as big as that given in `minValue`.
@@ -121,6 +130,9 @@ function filterBuildingsByMinValue(bldngs, minValue) {
     }, {});
 }
 
+// ==========
+// QUESTION 4
+// ==========
 // This function should take the buildings object (`bldngs`) and a number
 // (`maxRooms`), and should return an object that contains only those buildings
 // that have a number of rooms no bigger than `maxRooms`.
@@ -146,6 +158,9 @@ function filterBuildingsByMaxRooms(bldngs, maxRooms) {
     }, {});
 }
 
+// ==========
+// QUESTION 5
+// ==========
 // This function should take the buildings object (`bldngs`), and should return
 // an object that contains all the buildings objects, with an extra key added
 // called `id`, whose value is the top-level key of the object.
@@ -173,6 +188,9 @@ function addBuildingIdsToObjects(bldngs) {
   }, {});
 }
 
+// ==========
+// QUESTION 6
+// ==========
 // This function should take the buildings object (`bldngs`), and should return
 // an object that contains all the buildings objects, but where the value of the
 // `address` key is an object, whose keys are `street`, `town`, `state` and

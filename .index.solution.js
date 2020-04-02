@@ -16,7 +16,7 @@
  * The purpose of this challenge is to get used to manipulating data, and also
  * to get used to using array methods.
  */
-'use strict';
+"use strict";
 
 // INSTRUCTIONS
 // DO NOT UNCOMMENT THIS CODE
@@ -60,7 +60,6 @@
 // This is just an example, but you can use it to decide how you will complete
 // the functions below.
 
-
 // This function should take the buildings object (`bldngs`) and return an array
 // of objects that each describe a building. Using the `buildings` object above
 // as an example input, this function would return:
@@ -78,9 +77,10 @@
 //   ...
 // ]
 function getListOfBuildingObjects(bldngs) {
-  return Object.keys(bldngs).map(function (id) { return bldngs[id]; });
+  return Object.keys(bldngs).map(function(id) {
+    return bldngs[id];
+  });
 }
-
 
 // This function should take the buildings object (`bldngs`) and return an array
 // of strings where each string is the building address. Using the `buildings`
@@ -91,9 +91,10 @@ function getListOfBuildingObjects(bldngs) {
 //   ...
 // ]
 function getListOfBuildingAddresses(bldngs) {
-  return Object.keys(bldngs).map(function (id) { return bldngs[id].address; });
+  return Object.keys(bldngs).map(function(id) {
+    return bldngs[id].address;
+  });
 }
-
 
 // This function should take the buildings object (`bldngs`) and a number
 // (`minValue`), and should return an object that contains only those buildings
@@ -111,13 +112,14 @@ function getListOfBuildingAddresses(bldngs) {
 // }
 function filterBuildingsByMinValue(bldngs, minValue) {
   return Object.keys(bldngs)
-    .filter(function (id) { return bldngs[id].value >= minValue; })
-    .reduce(function (acc, id) {
+    .filter(function(id) {
+      return bldngs[id].value >= minValue;
+    })
+    .reduce(function(acc, id) {
       acc[id] = bldngs[id];
       return acc;
     }, {});
 }
-
 
 // This function should take the buildings object (`bldngs`) and a number
 // (`maxRooms`), and should return an object that contains only those buildings
@@ -135,13 +137,14 @@ function filterBuildingsByMinValue(bldngs, minValue) {
 // }
 function filterBuildingsByMaxRooms(bldngs, maxRooms) {
   return Object.keys(bldngs)
-    .filter(function (id) { return bldngs[id].rooms <= maxRooms; })
-    .reduce(function (acc, id) {
+    .filter(function(id) {
+      return bldngs[id].rooms <= maxRooms;
+    })
+    .reduce(function(acc, id) {
       acc[id] = bldngs[id];
       return acc;
     }, {});
 }
-
 
 // This function should take the buildings object (`bldngs`), and should return
 // an object that contains all the buildings objects, with an extra key added
@@ -165,12 +168,10 @@ function filterBuildingsByMaxRooms(bldngs, maxRooms) {
 //   },
 // }
 function addBuildingIdsToObjects(bldngs) {
-  return Object.keys(bldngs)
-    .reduce(function (acc, id) {
-      return Object.assign(acc, { [id]: Object.assign({ id: +id }, bldngs[id]) });
-    }, {});
+  return Object.keys(bldngs).reduce(function(acc, id) {
+    return Object.assign(acc, { [id]: Object.assign({ id: +id }, bldngs[id]) });
+  }, {});
 }
-
 
 // This function should take the buildings object (`bldngs`), and should return
 // an object that contains all the buildings objects, but where the value of the
@@ -203,19 +204,21 @@ function addBuildingIdsToObjects(bldngs) {
 //   },
 // }
 function parseBuildingAddresses(bldngs) {
-  return Object.keys(bldngs)
-    .reduce(function (acc, id) {
-      var addressParts = bldngs[id].address.split(',').map(function (s) { return s.trim(); });
-      var addressObject = {
-        street: addressParts[0],
-        town: addressParts[1],
-        state: addressParts[2],
-        zipcode: +addressParts[3],
-      };
-      return Object.assign(acc, { [id]: Object.assign({}, bldngs[id], { address: addressObject }) });
-    }, {});
+  return Object.keys(bldngs).reduce(function(acc, id) {
+    var addressParts = bldngs[id].address.split(",").map(function(s) {
+      return s.trim();
+    });
+    var addressObject = {
+      street: addressParts[0],
+      town: addressParts[1],
+      state: addressParts[2],
+      zipcode: +addressParts[3],
+    };
+    return Object.assign(acc, {
+      [id]: Object.assign({}, bldngs[id], { address: addressObject }),
+    });
+  }, {});
 }
-
 
 module.exports = {
   getListOfBuildingObjects,

@@ -16,7 +16,7 @@
  * The purpose of this challenge is to get used to manipulating data, and also
  * to get used to using array methods.
  */
-'use strict';
+"use strict";
 
 // INSTRUCTIONS
 // DO NOT UNCOMMENT THIS CODE
@@ -60,7 +60,6 @@
 // This is just an example, but you can use it to decide how you will complete
 // the functions below.
 
-
 // This function should take the buildings object (`bldngs`) and return an array
 // of objects that each describe a building. Using the `buildings` object above
 // as an example input, this function would return:
@@ -77,10 +76,9 @@
 //   },
 //   ...
 // ]
-function getListOfBuildingObjects (bldngs) {
+function getListOfBuildingObjects(bldngs) {
   // CODE HERE
 }
-
 
 // This function should take the buildings object (`bldngs`) and return an array
 // of strings where each string is the building address. Using the `buildings`
@@ -90,10 +88,9 @@ function getListOfBuildingObjects (bldngs) {
 //   '2367 Parkway Street, Palm Springs, California, 92262',
 //   ...
 // ]
-function getListOfBuildingAddresses (bldngs) {
+function getListOfBuildingAddresses(bldngs) {
   // CODE HERE
 }
-
 
 // This function should take the buildings object (`bldngs`) and a number
 // (`minValue`), and should return an object that contains only those buildings
@@ -109,10 +106,9 @@ function getListOfBuildingAddresses (bldngs) {
 //     value: 450000,
 //   },
 // }
-function filterBuildingsByMinValue (bldngs, minValue) {
+function filterBuildingsByMinValue(bldngs, minValue) {
   // CODE HERE
 }
-
 
 // This function should take the buildings object (`bldngs`) and a number
 // (`maxRooms`), and should return an object that contains only those buildings
@@ -128,10 +124,9 @@ function filterBuildingsByMinValue (bldngs, minValue) {
 //     value: 375000,
 //   },
 // }
-function filterBuildingsByMaxRooms (bldngs, maxRooms) {
+function filterBuildingsByMaxRooms(bldngs, maxRooms) {
   // CODE HERE
 }
-
 
 // This function should take the buildings object (`bldngs`), and should return
 // an object that contains all the buildings objects, with an extra key added
@@ -154,10 +149,9 @@ function filterBuildingsByMaxRooms (bldngs, maxRooms) {
 //     value: 375000,
 //   },
 // }
-function addBuildingIdsToObjects (bldngs) {
+function addBuildingIdsToObjects(bldngs) {
   // CODE HERE
 }
-
 
 // This function should take the buildings object (`bldngs`), and should return
 // an object that contains all the buildings objects, but where the value of the
@@ -189,10 +183,9 @@ function addBuildingIdsToObjects (bldngs) {
 //     value: 375000,
 //   },
 // }
-function parseBuildingAddresses (bldngs) {
+function parseBuildingAddresses(bldngs) {
   // CODE HERE
 }
-
 
 module.exports = {
   getListOfBuildingObjects,

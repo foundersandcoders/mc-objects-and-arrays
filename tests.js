@@ -1,7 +1,7 @@
 "use strict";
 
 var tape = require("tape");
-var fns = require("./index.js");
+var fns = require("./.index.solution.js");
 
 var buildings = {
   14358: {
@@ -24,7 +24,7 @@ var buildings = {
     rooms: 4,
     value: 490000,
   },
-  73826: {
+  87536: {
     address: "738 Paradise Lane, Claremont, California, 91711",
     rooms: 7,
     value: 1200000,
@@ -80,7 +80,7 @@ tape("filterBuildingsByMinValue", function(t) {
         rooms: 4,
         value: 490000,
       },
-      73826: {
+      87536: {
         address: "738 Paradise Lane, Claremont, California, 91711",
         rooms: 7,
         value: 1200000,
@@ -92,7 +92,7 @@ tape("filterBuildingsByMinValue", function(t) {
   t.deepEqual(
     fns.filterBuildingsByMinValue(buildings, 1000000),
     {
-      73826: {
+      87536: {
         address: "738 Paradise Lane, Claremont, California, 91711",
         rooms: 7,
         value: 1200000,
@@ -156,8 +156,8 @@ tape("addBuildingIdsToObjects", function(t) {
         rooms: 4,
         value: 490000,
       },
-      73826: {
-        id: 73826,
+      87536: {
+        id: 87536,
         address: "738 Paradise Lane, Claremont, California, 91711",
         rooms: 7,
         value: 1200000,
@@ -188,7 +188,7 @@ tape("addBuildingIdsToObjects", function(t) {
         rooms: 4,
         value: 490000,
       },
-      73826: {
+      87536: {
         address: "738 Paradise Lane, Claremont, California, 91711",
         rooms: 7,
         value: 1200000,
@@ -243,7 +243,7 @@ tape("parseBuildingAddresses", function(t) {
         rooms: 4,
         value: 490000,
       },
-      73826: {
+      87536: {
         address: {
           street: "738 Paradise Lane",
           town: "Claremont",
@@ -279,7 +279,7 @@ tape("parseBuildingAddresses", function(t) {
         rooms: 4,
         value: 490000,
       },
-      73826: {
+      87536: {
         address: "738 Paradise Lane, Claremont, California, 91711",
         rooms: 7,
         value: 1200000,

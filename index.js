@@ -146,6 +146,7 @@ function filterBuildingsByMaxRooms(bldngs, maxRooms) {
 // This function should take the buildings object (`bldngs`), and should return
 // an object that contains all the buildings objects, with an extra key added
 // called `id`, whose value is the top-level key of the object.
+// id should be a number, not a string
 //
 // Using the `buildings` object above as an example input, this function should
 // return:
@@ -175,6 +176,7 @@ function addBuildingIdsToObjects(bldngs) {
 // an object that contains all the buildings objects, but where the value of the
 // `address` key is an object, whose keys are `street`, `town`, `state` and
 // `zipcode`.
+// Zipcode should be a number, not a string
 //
 // Using the `buildings` object above as an example input, this function should
 // return:

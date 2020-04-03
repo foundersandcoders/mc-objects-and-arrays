@@ -7,10 +7,10 @@ instructions provided in the comments.
 
 The following is NOT ALLOWED:
 
-* `for` loops
-* `while` loops
-* `Array.push`
-* The `delete` keyword
+- `for` loops
+- `while` loops
+- `Array.push`
+- The `delete` keyword
 
 Instead, try to use array methods like `.map`, `.filter` and `.reduce`.
 

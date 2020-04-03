@@ -16,7 +16,7 @@
  * The purpose of this challenge is to get used to manipulating data, and also
  * to get used to using array methods.
  */
-'use strict';
+"use strict";
 
 // INSTRUCTIONS
 // DO NOT UNCOMMENT THIS CODE
@@ -50,7 +50,7 @@
 //     rooms: 4,
 //     value: 490000,
 //   },
-//   73826: {
+//   87536: {
 //     address: '738 Paradise Lane, Claremont, California, 91711',
 //     rooms: 7,
 //     value: 1200000,
@@ -60,7 +60,9 @@
 // This is just an example, but you can use it to decide how you will complete
 // the functions below.
 
-
+// ==========
+// QUESTION 1
+// ==========
 // This function should take the buildings object (`bldngs`) and return an array
 // of objects that each describe a building. Using the `buildings` object above
 // as an example input, this function would return:
@@ -77,11 +79,13 @@
 //   },
 //   ...
 // ]
-function getListOfBuildingObjects (bldngs) {
+function getListOfBuildingObjects(bldngs) {
   // CODE HERE
 }
 
-
+// ==========
+// QUESTION 2
+// ==========
 // This function should take the buildings object (`bldngs`) and return an array
 // of strings where each string is the building address. Using the `buildings`
 // object above as an example input, this function would return:
@@ -90,11 +94,13 @@ function getListOfBuildingObjects (bldngs) {
 //   '2367 Parkway Street, Palm Springs, California, 92262',
 //   ...
 // ]
-function getListOfBuildingAddresses (bldngs) {
+function getListOfBuildingAddresses(bldngs) {
   // CODE HERE
 }
 
-
+// ==========
+// QUESTION 3
+// ==========
 // This function should take the buildings object (`bldngs`) and a number
 // (`minValue`), and should return an object that contains only those buildings
 // that have a value at least as big as that given in `minValue`.
@@ -109,11 +115,13 @@ function getListOfBuildingAddresses (bldngs) {
 //     value: 450000,
 //   },
 // }
-function filterBuildingsByMinValue (bldngs, minValue) {
+function filterBuildingsByMinValue(bldngs, minValue) {
   // CODE HERE
 }
 
-
+// ==========
+// QUESTION 4
+// ==========
 // This function should take the buildings object (`bldngs`) and a number
 // (`maxRooms`), and should return an object that contains only those buildings
 // that have a number of rooms no bigger than `maxRooms`.
@@ -128,14 +136,17 @@ function filterBuildingsByMinValue (bldngs, minValue) {
 //     value: 375000,
 //   },
 // }
-function filterBuildingsByMaxRooms (bldngs, maxRooms) {
+function filterBuildingsByMaxRooms(bldngs, maxRooms) {
   // CODE HERE
 }
 
-
+// ==========
+// QUESTION 5
+// ==========
 // This function should take the buildings object (`bldngs`), and should return
 // an object that contains all the buildings objects, with an extra key added
 // called `id`, whose value is the top-level key of the object.
+// id should be a number, not a string
 //
 // Using the `buildings` object above as an example input, this function should
 // return:
@@ -154,15 +165,18 @@ function filterBuildingsByMaxRooms (bldngs, maxRooms) {
 //     value: 375000,
 //   },
 // }
-function addBuildingIdsToObjects (bldngs) {
+function addBuildingIdsToObjects(bldngs) {
   // CODE HERE
 }
 
-
+// ==========
+// QUESTION 6
+// ==========
 // This function should take the buildings object (`bldngs`), and should return
 // an object that contains all the buildings objects, but where the value of the
 // `address` key is an object, whose keys are `street`, `town`, `state` and
 // `zipcode`.
+// Zipcode should be a number, not a string
 //
 // Using the `buildings` object above as an example input, this function should
 // return:
@@ -189,10 +203,9 @@ function addBuildingIdsToObjects (bldngs) {
 //     value: 375000,
 //   },
 // }
-function parseBuildingAddresses (bldngs) {
+function parseBuildingAddresses(bldngs) {
   // CODE HERE
 }
-
 
 module.exports = {
   getListOfBuildingObjects,
